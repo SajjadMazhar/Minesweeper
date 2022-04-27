@@ -10,7 +10,7 @@ import {
 } from "./main.js"
 
 const BOARD_SIZE = 10
-const NUMBER_OF_MINES = 99
+const NUMBER_OF_MINES = Math.floor(Math.random()*30)
 
 const board = createBoard(BOARD_SIZE, NUMBER_OF_MINES)
 const boardElement = document.querySelector(".board")
